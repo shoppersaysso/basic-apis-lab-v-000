@@ -9,7 +9,7 @@ class RepositoriesController < ApplicationController
      req.params['client_id'] = ENV['client_id']
      req.params['client_secret'] = ENV['client_secret']
      req.params['name'] = params[:name]
-     req.params['repository'] = params[:zipcode]
+     req.params['repository'] = params[:url]
      req.params['description'] = params[:description]
    end
    render 'search'
